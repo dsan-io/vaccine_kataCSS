@@ -20,6 +20,7 @@
 
 h1,
 h2,
+h3,
 .title {
   font-family: var(--title);
   color: var(--title-color);
@@ -130,7 +131,7 @@ p {
   padding: 20px 20px;
   font-family: var(--placeholder);
   background-color: var(--btn-inactive);
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: var(--primary-color);
@@ -144,6 +145,10 @@ p {
 }
 
 /* Section / Hero Content */
+.hero {
+  position: relative;
+}
+
 .hero__content {
   padding: 8em 0;
   margin-top: 3px;
@@ -194,59 +199,47 @@ p {
   justify-content: center;
 }
 
-/* Schedule */
-.sec-schedule {
+/* Form - Floating */
+.vaccination-scheduler {
   position: absolute;
   z-index: 1;
-  top: 700px;
-  left: 101px;
-  width: 879px;
+  top: 600px;
+  width: 75%;
+}
+
+.form-group {
+  width: 100%;
 }
 
 /* title form */
-.bxs-time-five {
-  box-shadow: 0px 9px 5px -2px rgba(223, 231, 255, 1);
-}
 
-.sch {
-  color: var(--description-color);
+.scheduler__header {
   display: flex;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 /* form */
-label {
+.vaccination-form {
   display: flex;
   align-items: center;
-  font-family: var(--paragraph) !important;
-  color: var(--description-color);
-  font-weight: 500;
-  font-size: 18px !important;
+  gap: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: -45px 32px 70px -40px rgba(0, 0, 0, 0.5);
 }
 
-.sec-schedule form {
+.label-title {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 130px;
-  border: 2px solid white;
-  border-radius: 0.5rem;
-  box-shadow: 200px 0px 241px 60px rgba(253, 254, 255, 1) inset;
-  -webkit-box-shadow: 200px 0px 241px 60px rgba(255, 255, 255, 1) inset;
-  -moz-box-shadow: 200px 0px 241px 55px rgba(255, 255, 255, 1) inset;
+  font-family: var(--paragraph);
+  color: var(--secondary-color);
+  font-size: 1.1rem;
 }
 
-.sec-schedule .form-group {
-  padding-right: 1.8rem;
-}
-
-.sec-schedule .form-group .form-control {
+.form-control {
   margin-top: 0.6rem;
-  border: none;
 }
 
 ::placeholder {
@@ -254,24 +247,7 @@ label {
   font-size: 1.2rem;
   text-align: center;
   font-weight: 700;
-  color: var(--headings2);
-}
-
-.sec-schedule .sub {
-  font-family: var(--paragraph);
-  font-size: 16px;
-  margin-left: 30px;
-  padding: 15px 40px;
-  background-color: var(--principal);
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  color: white;
-  box-shadow: -4px 24px 21px -19px rgba(55, 55, 213, 0.49);
-}
-
-.sec-schedule .sub:hover {
-  background-color: rgba(55, 87, 213, 0.8);
+  color: var(--title-color);
 }
 
 /* Badge for Icons */
@@ -507,7 +483,7 @@ label {
 }
 
 .margin--inherit {
-  margin: inherit;
+  margin: 0;
 }
 
 .emergency__image {

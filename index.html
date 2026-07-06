@@ -36,7 +36,7 @@
     </header>
     <main>
       <!-- Hero Content -->
-      <section class="container layout padding--right">
+      <section class="container layout padding--right hero">
         <div class="hero__content">
           <h1 class="title">Fight Virus With Vaccines</h1>
           <p class="text-description">
@@ -58,14 +58,18 @@
 
         <div class="hero__image"></div>
         <!-- Form Div -->
-        <section class="sec-schedule">
-          <span class="sch"
-            ><i class="bx bxs-time-five icon-badge" style="color: #3353d1"></i
-            >Schedule your vaccinations</span
-          >
-          <form action="#" method="get">
+        <section class="vaccination-scheduler">
+          <div class="scheduler__header">
+            <i
+              class="bx bxs-time-five icon-badge icon--active"
+              style="color: #3353d1"
+            ></i>
+            <h3 class="margin--inherit">Schedule your vaccinations</h3>
+          </div>
+
+          <form action="#" method="get" class="vaccination-form">
             <div class="form-group">
-              <label for="location"
+              <label for="location" class="label-title"
                 ><i
                   class="bx bxs-map bx-flip-horizontal icon-badge"
                   style="color: #3353d1"
@@ -81,7 +85,7 @@
               />
             </div>
             <div class="form-group">
-              <label for="date"
+              <label for="date" class="label-title"
                 ><i
                   class="bx bxs-calendar icon-badge"
                   style="color: #3353d1"
@@ -96,7 +100,7 @@
               />
             </div>
             <div class="form-group">
-              <label for="type"
+              <label for="type" cla class="label-title"
                 ><i
                   class="bx bxs-edit-alt icon-badge"
                   style="color: #3353d1"
@@ -110,7 +114,7 @@
                 placeholder="Moderna"
               />
             </div>
-            <button class="sub">Submit</button>
+            <button class="btn active form-group">Submit</button>
           </form>
         </section>
       </section>
@@ -153,7 +157,7 @@
         <div class="cards-container">
           <div class="card-element">
             <i class="bx bx-slider-alt icon__bg" style="color: #2f4fcd"></i>
-            <span class="card__title">Minimize the spread of viruses</span>
+            <h4 class="card__title">Minimize the spread of viruses</h4>
             <p class="card__description">
               Vaccine has been proven effective to prevent someone from getting
               infected with Coronavirus
@@ -182,8 +186,7 @@
             <i class="bx bxs-chart icon__bg" style="color: #2f4fcd"></i>
             <h4 class="card__title">Creating group immunity</h4>
             <p class="card__description">
-              COVID-19 vaccination is also <br />
-              beneficial for creating group <br />
+              COVID-19 vaccination is also beneficial for creating group
               immunity or heard immunity
             </p>
           </div>
